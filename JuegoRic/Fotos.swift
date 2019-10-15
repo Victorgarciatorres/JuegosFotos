@@ -9,6 +9,5 @@ class Fotos: UIViewController {
     
     @IBOutlet weak var allPhotos: UICollectionView!
     
-    
 }
 
