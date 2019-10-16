@@ -27,6 +27,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="¡Pulsa y juega!"/>
                                 <connections>
+                                    <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQ9-Ck-hJl"/>
                                     <segue destination="TWJ-rJ-8k1" kind="show" id="cmM-cs-WhF"/>
                                 </connections>
                             </button>
@@ -34,10 +35,13 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="mainImage" destination="ZS8-HI-fmB" id="6fL-Pp-hfN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="66.666666666666671" y="109.82142857142857"/>
+            <point key="canvasLocation" x="367" y="115"/>
         </scene>
         <!--Fotos-->
         <scene sceneID="H41-18-ngQ">
@@ -71,12 +75,6 @@
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gsd-sz-GAz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                            </subviews>
                                         </view>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="vmE-Gx-inw">
@@ -86,7 +84,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7B6-Vw-5Qn">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MagicJohnson" translatesAutoresizingMaskIntoConstraints="NO" id="7B6-Vw-5Qn">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -100,7 +98,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WWx-k3-TF2">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Olajuwon" translatesAutoresizingMaskIntoConstraints="NO" id="WWx-k3-TF2">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -114,7 +112,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GwU-Fm-VUB">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="isiahT" translatesAutoresizingMaskIntoConstraints="NO" id="GwU-Fm-VUB">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -128,7 +126,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-7Y-fbL">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jabbar" translatesAutoresizingMaskIntoConstraints="NO" id="rdy-7Y-fbL">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -142,7 +140,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yVh-kp-Rmg">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="shaq" translatesAutoresizingMaskIntoConstraints="NO" id="yVh-kp-Rmg">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -156,7 +154,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pai-g1-2Rj">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="stockton" translatesAutoresizingMaskIntoConstraints="NO" id="Pai-g1-2Rj">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -170,7 +168,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JEG-yk-hc7">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rodman" translatesAutoresizingMaskIntoConstraints="NO" id="JEG-yk-hc7">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -184,7 +182,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-Az-ghf">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="jabbar" translatesAutoresizingMaskIntoConstraints="NO" id="y1E-Az-ghf">
                                                     <rect key="frame" x="0.0" y="0.0" width="89" height="82"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -200,7 +198,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lit-lX-Trh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="776.81159420289862" y="105.13392857142857"/>
+            <point key="canvasLocation" x="1051" y="115"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MagicJohnson" width="1200" height="675"/>
+        <image name="Olajuwon" width="234" height="215"/>
+        <image name="isiahT" width="645" height="430"/>
+        <image name="jabbar" width="670" height="370"/>
+        <image name="rodman" width="576" height="386"/>
+        <image name="shaq" width="640" height="476"/>
+        <image name="stockton" width="220" height="206"/>
+    </resources>
 </document>

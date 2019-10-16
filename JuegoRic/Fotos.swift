@@ -6,7 +6,6 @@ class Fotos: UIViewController {
         super.viewDidLoad()
     }
     
-    
     @IBOutlet weak var allPhotos: UICollectionView!
     
 }
