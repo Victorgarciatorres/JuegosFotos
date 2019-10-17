@@ -14,48 +14,52 @@ class ViewController: UIViewController {
     UIImage(named: "rodman.jpg"),
     UIImage(named: "Olajuwon.jpg"),
     ]
-    
+    var imagenShowed = [UIImage]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    
 
    
     @IBOutlet weak var mainImage: UIImageView!
     
-    @IBAction func Button(_ sender: Any) {
-        
+    @IBAction func buttonStart(_ sender: Any) {
+        var i = 0
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block:{timer in
+        if i < 5{
+            self.ImageChange()
+            self.imagenShowed.append(self.mainImage.image!)
+        }
+            i+=1
+        })
     }
     
-    
-    func ImageChange(segundos: UInt32) {
+    func ImageChange() {
         
-        sleep(segundos)
-        let random = arc4random_uniform(9)
+        let random = arc4random_uniform(UInt32(images.count))
         
         switch random {
         case 0:
             mainImage.image = UIImage(named: "rodman.jpg")
         case 1:
-            mainImage.image = UIImage(named: "DrJ.jpg")
-        case 2:
             mainImage.image = UIImage(named: "MagicJohnson.jpg")
-        case 3:
+        case 2:
             mainImage.image = UIImage(named: "jabbar.jpg")
-        case 4:
+        case 3:
             mainImage.image = UIImage(named: "Olajuwon.jpg")
-        case 5:
+        case 4:
             mainImage.image = UIImage(named: "shaq.jpg")
-        case 6:
+        case 5:
             mainImage.image = UIImage(named: "isiahT.jpg")
-        case 7:
+        case 6:
             mainImage.image = UIImage(named: "stockton.jpg")
-        case 8:
+        case 7:
             mainImage.image = UIImage(named: "nowitzki.jpg")
         default:
             mainImage.image = UIImage(named: "rodman.jpg")
-            
         }
     }
         
